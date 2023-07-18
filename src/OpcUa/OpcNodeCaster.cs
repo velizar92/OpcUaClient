@@ -1,0 +1,74 @@
+﻿using Opc.UaFx.Client;
+using Opc.UaFx;
+using System;
+using KomaxOpcUaClient.src.Interfaces;
+using System.Collections.Generic;
+
+namespace KomaxOpcUaClient.src.OpcUa
+{
+    public class OpcNodeCaster : IOpcUaNodeCaster
+    {
+        private readonly OpcClient _opcClient;
+
+        public OpcNodeCaster(OpcClient opcClient)
+        {
+            _opcClient = opcClient ?? throw new ArgumentNullException(nameof(opcClient));
+        }
+
+        public OpcDataObject TryCastNodeAsOpcDataObject(OpcNodeInfo childNode)
+        {
+            return TryCastNodeAsOpcComplexDataObject(childNode.NodeId.ToString());
+        }
+
+
+        public OpcDataObject TryCastNodeAsOpcDataObject(string nodeId)
+        {
+            return TryCastNodeAsOpcComplexDataObject(nodeId);
+        }
+
+
+        public IEnumerable<OpcDataObject> TryCastNodeAsOpcDataObjectCollection(OpcNodeInfo childNode)
+        {
+            return TryCastNodeAsOpcComplexDataObjectCollection(childNode.NodeId.ToString());
+        }
+
+        public IEnumerable<OpcDataObject> TryCastNodeAsOpcDataObjectCollection(string nodeId)
+        {
+            return TryCastNodeAsOpcComplexDataObjectCollection(nodeId);
+        }
+
+
+        private OpcDataObject TryCastNodeAsOpcComplexDataObject(string nodeId)
+        {
+            OpcDataObject opcDataObject = null;
+
+            try
+            {
+                opcDataObject = _opcClient.ReadNode(nodeId).As<OpcDataObject>();
+            }
+            catch (InvalidCastException)
+            {
+                return null;
+            }
+
+            return opcDataObject;
+        }
+
+
+        private IEnumerable<OpcDataObject> TryCastNodeAsOpcComplexDataObjectCollection(string nodeId)
+        {
+            OpcDataObject[] opcDataObject = null;
+
+            try
+            {
+                opcDataObject = _opcClient.ReadNode(nodeId).As<OpcDataObject[]>();
+            }
+            catch (InvalidCastException)
+            {
+                return null;
+            }
+
+            return opcDataObject;
+        }
+    }
+}

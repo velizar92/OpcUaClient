@@ -1,0 +1,20 @@
+﻿using System.IO;
+using Newtonsoft.Json;
+
+namespace OpcUaClient
+{
+    public class ConfigurationManager
+    {
+        public static Configuration LoadConfiguration()
+        {
+            Configuration configuration = null;
+
+            string currentDirectory = Directory.GetCurrentDirectory();
+            string filePath = Path.Combine(currentDirectory, "configuration.json");
+
+            configuration = JsonConvert.DeserializeObject<Configuration>(File.ReadAllText(filePath));
+            return configuration;
+        }
+
+    }
+}

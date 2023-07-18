@@ -50,6 +50,7 @@ UI components:
   8. "Grid" control - Shows the configured nodes in the configuration file, or the children of selected node in the Tree View.
     ![Grid](https://github.com/velizar92/OpcUaClient/assets/40525254/1a31b59d-d790-497f-99de-cd832ceeca18)
   9. "TreeView" control - Shows all server nodes.
+      
       ![TreeView](https://github.com/velizar92/OpcUaClient/assets/40525254/03786ab8-0df2-41a1-957f-e103d9daffa9)
 
 

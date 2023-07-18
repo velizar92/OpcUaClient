@@ -1,14 +1,16 @@
 # OpcUaClient
 
 This is a project that represents OPC UA client that is made with C# programming language and Windows Forms desktop GUI technology. 
-The purpose of project is to connect to every OPC UA server, it desn't matter if it is local server or remote server. There is a 
-confuguration JSON file in which the client must setup the URL to the server, the Root Node Id and (it is NOT mandatory) all node ids
+The purpose of project is to connect to every OPC UA server, it doesn't matter if it is local server or remote server. There is a 
+configuration JSON file in which the client must setup the URL to the server, the Root Node Id and (it is NOT mandatory) all node ids
 that the cliet wants to see in the datagrid view. This config option is because in some cases the client wants to see only the nodes
 that are interesting for him/her. It is added automated subscription (refresh for 1 sec) for each of nodes that client shows.
 
-NOTE: The two things that are mandatory for the proper working of application are to be set server URL and to be set the Root Node Id. 
+NOTE: The two things that are must for the proper working of application are to be set server URL and to be set the Root Node Id. 
 In the next versions of the app, probably the root node setting will be removed.
 NOTE: All nodes are configured to get almost immediate the latest value for the node.
+
+NOTE: For the making of this project is used the OPC UA library from Traeger (german team). In the repo there is not license key. This should be provided from the person who wants to use this project and to deploy it.
 
 /App/:
 ![app](https://github.com/velizar92/OpcUaClient/assets/40525254/c50bbce5-bf37-433f-a48f-a855b779d619)

@@ -2,7 +2,7 @@
 
 This is a project that represents OPC UA client that is made with C# programming language and Windows Forms desktop GUI technology. 
 The purpose of project is to connect to every OPC UA server, it doesn't matter if it is local server or remote server. There is a 
-configuration JSON file in which the client must setup the URL to the server, the Root Node Id and (it is NOT mandatory) all node ids
+configuration JSON file in which the client must setup the URL to the server, the Root Node Id and all node ids
 that the cliet wants to see in the datagrid view. This config option is because in some cases the client wants to see only the nodes
 that are interesting for him/her. It is added automated subscription (refresh for 1 sec) for each of nodes that client shows.
 

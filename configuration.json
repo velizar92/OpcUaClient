@@ -1,29 +1,9 @@
 {
   "OpcUaConfiguration": {
     "ServerPath": "opc.tcp://localhost:4840/",
-    "RootNodeId": "ns=2;s=CSWIN",
+    "RootNodeId": "",
     "OpcUaServerNodes": [
-      "ns=2;s=CSWIN/General/SystemInformation/SystemId",
-      "ns=2;s=CSWIN/General/SystemInformation/Producer",
-      "ns=2;s=CSWIN/General/SystemInformation/ProductionLine",
-      "ns=2;s=CSWIN/General/SystemInformation/ComputerName",
-      "ns=2;s=CSWIN/General/SystemInformation/CSWINVersion",
-      "ns=2;s=CSWIN/General/SystemInformation/SystemType",
-      "ns=2;s=CSWIN/General/SystemInformation/ProjectName",
-      "ns=2;s=CSWIN/Configuration/OrderTestProgram/DrawingNumber",
-      "ns=2;s=CSWIN/Configuration/OrderTestProgram/Ecode",
-      "ns=2;s=CSWIN/Configuration/OrderTestProgram/Revision",
-      "ns=2;s=CSWIN/Application/OrderTestReport/NumberOfTests",
-      "ns=2;s=CSWIN/Application/OrderTestReport/NumberOfOkTests",
-      "ns=2;s=CSWIN/Application/OrderTestResult/TestResult",
-      "ns=2;s=CSWIN/Application/OrderTestResult/TimeStamp",
-      "ns=2;s=CSWIN/Application/OrderTestProgramReport/DrawingNumber",
-      "ns=2;s=CSWIN/Application/OrderTestProgramReport/Ecode",
-      "ns=2;s=CSWIN/Application/OrderTestProgramReport/Revision",
-      "ns=2;s=CSWIN/Status/SystemStatus",
-      "ns=2;s=CSWIN/Status/NetworkStatus",
-      "ns=2;s=CSWIN/Status/Errors",
-      "ns=2;s=CSWIN/Status/ActiveJob"
+      
     ]
   }
 }

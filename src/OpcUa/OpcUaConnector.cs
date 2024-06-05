@@ -3,7 +3,7 @@ using Opc.UaFx.Client;
 using OpcUaClient.src.Interfaces;
 using Opc.UaFx;
 
-namespace OpcUaClient
+namespace OpcUaClient.src.OpcUa
 {
     public class OpcUaConnector : IOpcUaConnector
     {

@@ -6,11 +6,11 @@ using System.Collections.Generic;
 
 namespace OpcUaClient.src.OpcUa
 {
-    public class OpcNodeCaster : IOpcUaNodeCaster
+    public class OpcUaNodeCaster : IOpcUaNodeCaster
     {
         private readonly OpcClient _opcClient;
 
-        public OpcNodeCaster(OpcClient opcClient)
+        public OpcUaNodeCaster(OpcClient opcClient)
         {
             _opcClient = opcClient ?? throw new ArgumentNullException(nameof(opcClient));
         }

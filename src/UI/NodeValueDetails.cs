@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace KomaxOpcUaClient.src.UI
+namespace OpcUaClient.src.UI
 {
     public partial class NodeValueDetails : Form
     {

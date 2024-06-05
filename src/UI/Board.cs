@@ -1,4 +1,4 @@
-﻿using KomaxOpcUaClient.src.Interfaces;
+﻿using OpcUaClient.src.Interfaces;
 using OpcUaClient.src;
 using OpcUaClient;
 using Opc.UaFx.Client;
@@ -7,12 +7,11 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
-using OpcUaClient.src.Interfaces;
 using Opc.UaFx;
 using OpcUaClient.Interfaces;
 using System.Linq;
 
-namespace KomaxOpcUaClient.src.UI
+namespace OpcUaClient.src.UI
 {
     public partial class Board : Form
     {

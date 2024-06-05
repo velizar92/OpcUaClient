@@ -1,4 +1,4 @@
-﻿namespace KomaxOpcUaClient.src.UI
+﻿namespace OpcUaClient.src.UI
 {
     partial class NodeValueDetails
     {

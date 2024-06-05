@@ -5,10 +5,9 @@ using OpcUaClient.Interfaces;
 using OpcUaClient.src.Interfaces;
 using System.Collections.Generic;
 using OpcUaClient.src;
-using KomaxOpcUaClient.src.Interfaces;
 using System;
 
-namespace OpcUaClient
+namespace OpcUaClient.src.OpcUa
 {
     public class OpcUaBrowser : IOpcUaBrowser
     {

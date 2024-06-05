@@ -1,10 +1,10 @@
-﻿using KomaxOpcUaClient.src.UI;
+﻿using OpcUaClient.src.UI;
 using OpcUaClient;
 using System;
 using System.Threading;
 using System.Windows.Forms;
 
-namespace KomaxOpcUaClient
+namespace OpcUaClient
 {
     internal static class Program
     {
@@ -14,7 +14,7 @@ namespace KomaxOpcUaClient
         [STAThread]
         static void Main()
         {
-            const string appName = "KomaxOpcUaClient";
+            const string appName = "OpcUaClient";
             bool createdNew;
 
             Opc.UaFx.Licenser.LicenseKey = LicenseClass.s_licenseKey;

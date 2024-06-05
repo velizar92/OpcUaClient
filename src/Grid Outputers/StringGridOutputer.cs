@@ -1,9 +1,9 @@
-﻿using KomaxOpcUaClient.src.Interfaces;
+﻿using OpcUaClient.src.Interfaces;
 using Opc.UaFx.Client;
 using System;
 using System.Windows.Forms;
 
-namespace KomaxOpcUaClient.src
+namespace OpcUaClient.src
 {
     public class StringGridOutputer : IOpcUaNodeValueGridOutputer
     {

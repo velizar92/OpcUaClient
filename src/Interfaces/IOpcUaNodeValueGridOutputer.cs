@@ -1,7 +1,7 @@
 ﻿using Opc.UaFx.Client;
 using System.Windows.Forms;
 
-namespace KomaxOpcUaClient.src.Interfaces
+namespace OpcUaClient.src.Interfaces
 {
     public interface IOpcUaNodeValueGridOutputer
     {

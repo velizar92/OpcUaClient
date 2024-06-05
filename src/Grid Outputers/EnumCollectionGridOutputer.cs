@@ -1,11 +1,11 @@
-﻿using KomaxOpcUaClient.src.Interfaces;
+﻿using OpcUaClient.src.Interfaces;
 using Opc.UaFx;
 using Opc.UaFx.Client;
 using System;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace KomaxOpcUaClient
+namespace OpcUaClient
 {
     public class EnumCollectionGridOutputer : IOpcUaNodeValueGridOutputer
     {

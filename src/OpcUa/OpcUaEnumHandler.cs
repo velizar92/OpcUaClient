@@ -1,10 +1,10 @@
 ﻿using Opc.UaFx.Client;
 using Opc.UaFx;
-using KomaxOpcUaClient.src.Interfaces;
+using OpcUaClient.src.Interfaces;
 using System.Collections.Generic;
 using System;
 
-namespace KomaxOpcUaClient.src.OpcUa
+namespace OpcUaClient.src.OpcUa
 {
     public class OpcUaEnumHandler : IOpcUaEnumHandler
     {

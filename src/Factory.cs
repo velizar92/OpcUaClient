@@ -2,10 +2,8 @@
 using OpcUaClient.Interfaces;
 using OpcUaClient.src.Interfaces;
 using OpcUaClient.src.OpcUa;
-using KomaxOpcUaClient.src.OpcUa;
-using KomaxOpcUaClient.src.Interfaces;
-using KomaxOpcUaClient.src;
-using KomaxOpcUaClient;
+using OpcUaClient.src;
+using OpcUaClient;
 
 namespace OpcUaClient.src
 {

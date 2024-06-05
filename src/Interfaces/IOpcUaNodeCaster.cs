@@ -2,7 +2,7 @@
 using Opc.UaFx;
 using System.Collections.Generic;
 
-namespace KomaxOpcUaClient.src.Interfaces
+namespace OpcUaClient.src.Interfaces
 {
     public interface IOpcUaNodeCaster
     {

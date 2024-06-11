@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
 using Opc.UaFx.Client;
+using OpcUaLibrary.Models;
 
-namespace OpcUaClient.src.Interfaces
+namespace OpcUaLibrary.Interfaces
 {
     public interface IOpcUaBrowser
     {      

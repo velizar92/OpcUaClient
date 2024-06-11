@@ -1,9 +1,9 @@
 ﻿using System;
 using Opc.UaFx.Client;
-using OpcUaClient.src.Interfaces;
+using OpcUaLibrary.Interfaces;
 using Opc.UaFx;
 
-namespace OpcUaClient.src.OpcUa
+namespace OpcUaLibrary.OpcUa
 {
     public class OpcUaConnector : IOpcUaConnector
     {

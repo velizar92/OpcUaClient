@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace OpcUaClient.src
+namespace OpcUaLibrary.Models
 {
     public class OpcUaNodeInfoModel
     {

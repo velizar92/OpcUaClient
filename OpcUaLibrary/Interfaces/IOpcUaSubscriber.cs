@@ -1,7 +1,7 @@
 ﻿using System;
 using Opc.UaFx.Client;
 
-namespace OpcUaClient.src.Interfaces
+namespace OpcUaLibrary.Interfaces
 {
     public interface IOpcUaSubscriber
     {

@@ -1,4 +1,4 @@
-﻿namespace OpcUaClient
+﻿namespace OpcUaLibrary.Configuration
 {
     public class OpcUaConfiguration
     {

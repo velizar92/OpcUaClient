@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using Opc.UaFx.Client;
-using OpcUaClient.Interfaces;
-using OpcUaClient.src.Interfaces;
+using OpcUaLibrary.Interfaces;
+using OpcUaLibrary.Models;
 using System.Linq;
 
-namespace OpcUaClient.src.OpcUa
+namespace OpcUaLibrary.OpcUa
 {
     public class OpcUaSubscriber : IOpcUaSubscriber
     {

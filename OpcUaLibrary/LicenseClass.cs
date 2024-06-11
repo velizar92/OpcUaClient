@@ -1,4 +1,4 @@
-﻿namespace OpcUaClient
+﻿namespace OpcUaLibrary
 {
     public static class LicenseClass
     {

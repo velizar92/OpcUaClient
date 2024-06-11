@@ -1,11 +1,11 @@
-﻿using OpcUaClient.src.Interfaces;
+﻿using OpcUaLibrary.Interfaces;
 using Opc.UaFx;
 using Opc.UaFx.Client;
 using System;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace OpcUaClient
+namespace OpcUaLibrary
 {
     public class EnumCollectionGridOutputer : IOpcUaNodeValueGridOutputer
     {

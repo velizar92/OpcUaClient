@@ -1,11 +1,9 @@
 ﻿using Opc.UaFx.Client;
-using OpcUaClient.Interfaces;
-using OpcUaClient.src.Interfaces;
-using OpcUaClient.src.OpcUa;
-using OpcUaClient.src;
-using OpcUaClient;
+using OpcUaLibrary.Interfaces;
+using OpcUaLibrary.OpcUa;
+using OpcUaLibrary;
 
-namespace OpcUaClient.src
+namespace OpcUaLibrary
 {
     public class Factory
     {

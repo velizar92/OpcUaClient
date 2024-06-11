@@ -1,4 +1,4 @@
-﻿namespace OpcUaClient.src.Interfaces
+﻿namespace OpcUaLibrary.Interfaces
 {
     public interface IOpcUaConnector
     {

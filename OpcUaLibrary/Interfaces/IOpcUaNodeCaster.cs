@@ -2,7 +2,7 @@
 using Opc.UaFx;
 using System.Collections.Generic;
 
-namespace OpcUaClient.src.Interfaces
+namespace OpcUaLibrary.Interfaces
 {
     public interface IOpcUaNodeCaster
     {

@@ -17,8 +17,6 @@ namespace OpcUaClient
             const string appName = "OpcUaClient";
             bool createdNew;
 
-            Opc.UaFx.Licenser.LicenseKey = LicenseClass.s_licenseKey;
-
             var mutex = new Mutex(true, appName, out createdNew);
 
             if (!createdNew)

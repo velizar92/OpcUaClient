@@ -1,10 +1,10 @@
 ﻿using Opc.UaFx.Client;
 using Opc.UaFx;
 using System;
-using OpcUaClient.src.Interfaces;
+using OpcUaLibrary.Interfaces;
 using System.Collections.Generic;
 
-namespace OpcUaClient.src.OpcUa
+namespace OpcUaLibrary.OpcUa
 {
     public class OpcNodeCaster : IOpcUaNodeCaster
     {

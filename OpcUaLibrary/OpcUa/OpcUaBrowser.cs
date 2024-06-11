@@ -1,13 +1,13 @@
 ﻿using System.Linq;
 using Opc.UaFx;
 using Opc.UaFx.Client;
-using OpcUaClient.Interfaces;
-using OpcUaClient.src.Interfaces;
+using OpcUaLibrary.Interfaces;
 using System.Collections.Generic;
-using OpcUaClient.src;
+using OpcUaLibrary;
 using System;
+using OpcUaLibrary.Models;
 
-namespace OpcUaClient.src.OpcUa
+namespace OpcUaLibrary.OpcUa
 {
     public class OpcUaBrowser : IOpcUaBrowser
     {

@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B0C942F1-8EBE-4B14-8C2D-A22FEE7FF218}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
-    <RootNamespace>KomaxOpcUaClient</RootNamespace>
-    <AssemblyName>KomaxOpcUaClient</AssemblyName>
+    <ProjectGuid>{C975C837-BDB1-40F4-9CA5-4343BF5A407D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OpcUaLibrary</RootNamespace>
+    <AssemblyName>OpcUaLibrary</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -44,72 +42,48 @@
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Deployment" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="src\UI\Board.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="src\UI\Board.Designer.cs">
-      <DependentUpon>Board.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="Configuration\Configuration.cs" />
+    <Compile Include="Configuration\ConfigurationManager.cs" />
+    <Compile Include="Configuration\OpcUaConfiguration.cs" />
+    <Compile Include="Factory.cs" />
+    <Compile Include="Grid Outputers\ComplexObjectGridOutputer.cs" />
+    <Compile Include="Grid Outputers\EnumCollectionGridOutputer.cs" />
+    <Compile Include="Grid Outputers\Int32GridOutputer.cs" />
+    <Compile Include="Grid Outputers\StringGridOutputer.cs" />
+    <Compile Include="Interfaces\IConfiguration.cs" />
+    <Compile Include="Interfaces\IOpcUaBrowser.cs" />
+    <Compile Include="Interfaces\IOpcUaConnector.cs" />
+    <Compile Include="Interfaces\IOpcUaEnumHandler.cs" />
+    <Compile Include="Interfaces\IOpcUaNodeCaster.cs" />
+    <Compile Include="Interfaces\IOpcUaNodeValueGridOutputer.cs" />
+    <Compile Include="Interfaces\IOpcUaSubscriber.cs" />
+    <Compile Include="LicenseClass.cs" />
+    <Compile Include="Models\OpcUaNodeInfoModel.cs" />
+    <Compile Include="OpcUa\OpcNodeCaster.cs" />
+    <Compile Include="OpcUa\OpcUaBrowser.cs" />
+    <Compile Include="OpcUa\OpcUaConnector.cs" />
+    <Compile Include="OpcUa\OpcUaEnumHandler.cs" />
+    <Compile Include="OpcUa\OpcUaSubscriber.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="src\UI\NodeValueDetails.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="src\UI\NodeValueDetails.Designer.cs">
-      <DependentUpon>NodeValueDetails.cs</DependentUpon>
-    </Compile>
-    <Compile Include="src\UI\UI Help\OutputEngine.cs" />
-    <EmbeddedResource Include="src\UI\Board.resx">
-      <DependentUpon>Board.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="src\UI\NodeValueDetails.resx">
-      <DependentUpon>NodeValueDetails.cs</DependentUpon>
-    </EmbeddedResource>
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="ico.ico" />
+    <None Include="app.config" />
+    <EmbeddedResource Include="configuration.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Opc.UaFx.Advanced">
-      <Version>2.42.0</Version>
+      <Version>2.42.0.1</Version>
     </PackageReference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\OpcUaLibrary\OpcUaLibrary.csproj">
-      <Project>{c975c837-bdb1-40f4-9ca5-4343bf5a407d}</Project>
-      <Name>OpcUaLibrary</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

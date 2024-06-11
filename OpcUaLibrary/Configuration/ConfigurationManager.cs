@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using Newtonsoft.Json;
 
-namespace OpcUaClient
+namespace OpcUaLibrary.Configuration
 {
     public class ConfigurationManager
     {

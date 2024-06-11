@@ -1,6 +1,6 @@
-﻿using OpcUaClient.Interfaces;
+﻿using OpcUaLibrary.Interfaces;
 
-namespace OpcUaClient
+namespace OpcUaLibrary.Configuration
 {
     public class Configuration : IConfiguration
     {

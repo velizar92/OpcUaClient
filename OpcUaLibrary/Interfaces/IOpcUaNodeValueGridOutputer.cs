@@ -1,7 +1,7 @@
 ﻿using Opc.UaFx.Client;
 using System.Windows.Forms;
 
-namespace OpcUaClient.src.Interfaces
+namespace OpcUaLibrary.Interfaces
 {
     public interface IOpcUaNodeValueGridOutputer
     {

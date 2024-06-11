@@ -1,10 +1,10 @@
-﻿using OpcUaClient.src.Interfaces;
+﻿using OpcUaLibrary.Interfaces;
 using Opc.UaFx;
 using Opc.UaFx.Client;
 using System;
 using System.Windows.Forms;
 
-namespace OpcUaClient.src
+namespace OpcUaLibrary
 {
     public class Int32GridOutputer : IOpcUaNodeValueGridOutputer
     {

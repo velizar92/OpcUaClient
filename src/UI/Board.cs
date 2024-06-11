@@ -1,14 +1,14 @@
-﻿using OpcUaClient.src.Interfaces;
-using OpcUaClient.src;
-using OpcUaClient;
-using Opc.UaFx.Client;
+﻿using Opc.UaFx.Client;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
 using Opc.UaFx;
-using OpcUaClient.Interfaces;
+using OpcUaLibrary;
+using OpcUaLibrary.Interfaces;
+using OpcUaLibrary.Models;
+using OpcUaLibrary.Configuration;
 using System.Linq;
 
 namespace OpcUaClient.src.UI

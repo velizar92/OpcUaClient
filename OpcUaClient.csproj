@@ -106,7 +106,7 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\OpcUaLibrary\OpcUaLibrary.csproj">
+    <ProjectReference Include="OpcUaLibrary\OpcUaLibrary.csproj">
       <Project>{c975c837-bdb1-40f4-9ca5-4343bf5a407d}</Project>
       <Name>OpcUaLibrary</Name>
     </ProjectReference>

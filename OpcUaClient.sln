@@ -5,7 +5,7 @@ VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpcUaClient", "OpcUaClient.csproj", "{B0C942F1-8EBE-4B14-8C2D-A22FEE7FF218}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpcUaLibrary", "..\OpcUaLibrary\OpcUaLibrary.csproj", "{C975C837-BDB1-40F4-9CA5-4343BF5A407D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpcUaLibrary", "OpcUaLibrary\OpcUaLibrary.csproj", "{C975C837-BDB1-40F4-9CA5-4343BF5A407D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
